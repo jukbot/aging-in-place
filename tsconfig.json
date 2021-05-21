@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "esnext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["vite/client", "node"],
+    "types": ["vite/client", "node", "cypress"],
     "allowJs": false,
     "skipLibCheck": false,
     "esModuleInterop": false,
@@ -20,5 +20,6 @@
       "@/pages/*": ["./src/pages/*"]
     }
   },
-  "include": ["./src", "@types/**/*.d.ts"]
+  "include": ["./src", "@types/**/*.d.ts"],
+  "exclude": ["node_modules/", "node_modules/@types", "test"]
 }
