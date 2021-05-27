@@ -1,4 +1,3 @@
-import defaultTheme from 'windicss/defaultTheme'
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
