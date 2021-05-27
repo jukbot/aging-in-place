@@ -1,42 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Chonburi&family=Prompt:wght@200;300;400;500;600&display=swap');
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
 @layer base {
   :root {
     --color-primary: #7ce4a7;
     --color-secondary: #ededed;
-    --color-dark-green: #155730;
+    --color-accent: #155730;
     --color-base: #e9fdf1;
     --color-warning: #fad247;
     --color-disabled: #bcbec0;
   }
 
-  body {
-    touch-action: pan-y;
-    margin: 0;
-    background-color: #e9fdf1;
+  * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  @responsive {
-    .text-shadow {
-      text-shadow: 3px 3px var(--color-primary);
-    }
-    /*
-    .text-shadow-md {
-      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
-    }
-
-    .text-shadow-lg {
-      text-shadow: 0 15px 30px rgba(0, 0, 0, 0.11), 0 5px 15px rgba(0, 0, 0, 0.08);
-    }
-
-    .text-shadow-none {
-      text-shadow: none;
-    } */
+  body {
+    touch-action: pan-y;
+    background-color: #e9fdf1;
+    scroll-behavior: smooth;
   }
 
   /* thai */
@@ -208,5 +188,11 @@
     src: url(https://fonts.gstatic.com/s/prompt/v5/-W_8XJnvUD7dzB2Cv_4IaWMuUZctdg.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
       U+FEFF, U+FFFD;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 3px 3px var(--color-primary);
   }
 }

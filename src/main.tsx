@@ -2,6 +2,7 @@ import React from 'react'
 import { hydrate, render } from 'react-dom'
 import { HelmetProvider } from 'react-helmet-async'
 
+import 'virtual:windi.css'
 import './index.css'
 import App from './App'
 
